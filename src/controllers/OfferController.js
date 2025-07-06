@@ -1,4 +1,3 @@
-
 // const OfferModel = require('../models/OfferModel');
 // const multer = require('multer');
 // const cloudinaryUtil = require("../Utils/CloudinaryUtil");
@@ -222,7 +221,7 @@
 
 const OfferModel = require('../models/OfferModel');
 const multer = require('multer');
-const cloudinaryUtil = require("../utils/cloudinaryUtil");
+const cloudinaryUtil = require("../Utils/CloudinaryUtil");
 const mongoose = require('mongoose');
 
 // Multer storage configuration
@@ -381,6 +380,19 @@ const deleteOffer = async (req, res) => {
         });
     }
 };
+
+const categories = [
+    "pizza",
+    "burger",
+    "biryani",
+    "shake",
+    "samosa",
+    "cake",
+    "rolls",
+    "dosa",
+    "momos",
+    "noodles"
+];
 
 const getCategories = async (req, res) => {
     try {
