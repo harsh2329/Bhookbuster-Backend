@@ -41,7 +41,7 @@ app.use("/admin", AdminRoutes) //http://localhost:3000/admin/login
 const CategoryRoutes = require("./src/routes/CategoryRoutes")
 app.use("/category", CategoryRoutes) //http://localhost:3000/category/addCategory
 
-mongoose.connect("mongodb://127.0.0.1:27017/25_node_internship").then(()=>{
+mongoose.connect(process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/25_node_internship").then(()=>{
     console.log("database connected....")
 })
 
