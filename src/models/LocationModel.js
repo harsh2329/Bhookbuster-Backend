@@ -36,14 +36,14 @@ stateId:{
     ref: 'State', 
     required: true
 },
-cityId:{
-    type:Schema.Types.ObjectId,
-    ref:"City",
-},
-areaId:{
-    type:Schema.Types.ObjectId,
-    ref:"Area",
-},
+// cityId:{
+//     type:Schema.Types.ObjectId,
+//     ref:"City",
+// },
+// areaId:{
+//     type:Schema.Types.ObjectId,
+//     ref:"Area",
+// },
 // userId:{
 //     type: Schema.Types.ObjectId,
 //     ref: 'users',
