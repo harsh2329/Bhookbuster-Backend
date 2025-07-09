@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const locationSchema = new Schema({ 
 
 title:{
-    type:String,
+    type:String,     
     required:true,
 },
 category:{
@@ -31,22 +31,10 @@ address:{
     type:String,
     required:true,
 },
-stateId:{
-    type: Schema.Types.ObjectId,
-    ref: 'State', 
-    required: true
-},
-// cityId:{
-//     type:Schema.Types.ObjectId,
-//     ref:"City",
-// },
-// areaId:{
-//     type:Schema.Types.ObjectId,
-//     ref:"Area",
-// },
-// userId:{
+// stateId:{
 //     type: Schema.Types.ObjectId,
-//     ref: 'users',
+//     ref: 'State', 
+    
 //     required: true
 // },
 foodtype:{
